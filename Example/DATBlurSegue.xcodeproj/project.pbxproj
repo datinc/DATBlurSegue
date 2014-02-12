@@ -21,8 +21,8 @@
 		D137701D18AC30D7009B835B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1376FFF18AC30D6009B835B /* UIKit.framework */; };
 		D137702518AC30D7009B835B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D137702318AC30D7009B835B /* InfoPlist.strings */; };
 		D137702718AC30D7009B835B /* DATBlurSegueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D137702618AC30D7009B835B /* DATBlurSegueTests.m */; };
-		D137703418AC30E8009B835B /* DATBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = D137703118AC30E8009B835B /* DATBlurView.m */; };
-		D137703518AC30E8009B835B /* DATBlurSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D137703318AC30E8009B835B /* DATBlurSegue.m */; };
+		D137703A18AC3E8C009B835B /* DATBlurSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D137703718AC3E8C009B835B /* DATBlurSegue.m */; };
+		D137703B18AC3E8C009B835B /* DATBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = D137703918AC3E8C009B835B /* DATBlurView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +55,10 @@
 		D137702218AC30D7009B835B /* DATBlurSegueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DATBlurSegueTests-Info.plist"; sourceTree = "<group>"; };
 		D137702418AC30D7009B835B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D137702618AC30D7009B835B /* DATBlurSegueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DATBlurSegueTests.m; sourceTree = "<group>"; };
-		D137703018AC30E8009B835B /* DATBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DATBlurView.h; sourceTree = "<group>"; };
-		D137703118AC30E8009B835B /* DATBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DATBlurView.m; sourceTree = "<group>"; };
-		D137703218AC30E8009B835B /* DATBlurSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DATBlurSegue.h; sourceTree = "<group>"; };
-		D137703318AC30E8009B835B /* DATBlurSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DATBlurSegue.m; sourceTree = "<group>"; };
+		D137703618AC3E8C009B835B /* DATBlurSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DATBlurSegue.h; path = ../../DATBlurSegue/DATBlurSegue.h; sourceTree = "<group>"; };
+		D137703718AC3E8C009B835B /* DATBlurSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DATBlurSegue.m; path = ../../DATBlurSegue/DATBlurSegue.m; sourceTree = "<group>"; };
+		D137703818AC3E8C009B835B /* DATBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DATBlurView.h; path = ../../DATBlurSegue/DATBlurView.h; sourceTree = "<group>"; };
+		D137703918AC3E8C009B835B /* DATBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DATBlurView.m; path = ../../DATBlurSegue/DATBlurView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +118,10 @@
 		D137700118AC30D6009B835B /* DATBlurSegue */ = {
 			isa = PBXGroup;
 			children = (
-				D137703018AC30E8009B835B /* DATBlurView.h */,
-				D137703118AC30E8009B835B /* DATBlurView.m */,
-				D137703218AC30E8009B835B /* DATBlurSegue.h */,
-				D137703318AC30E8009B835B /* DATBlurSegue.m */,
+				D137703618AC3E8C009B835B /* DATBlurSegue.h */,
+				D137703718AC3E8C009B835B /* DATBlurSegue.m */,
+				D137703818AC3E8C009B835B /* DATBlurView.h */,
+				D137703918AC3E8C009B835B /* DATBlurView.m */,
 				D137700A18AC30D6009B835B /* AppDelegate.h */,
 				D137700B18AC30D6009B835B /* AppDelegate.m */,
 				D137700D18AC30D6009B835B /* Main.storyboard */,
@@ -259,10 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D137703A18AC3E8C009B835B /* DATBlurSegue.m in Sources */,
 				D137701218AC30D6009B835B /* ViewController.m in Sources */,
-				D137703518AC30E8009B835B /* DATBlurSegue.m in Sources */,
-				D137703418AC30E8009B835B /* DATBlurView.m in Sources */,
 				D137700C18AC30D6009B835B /* AppDelegate.m in Sources */,
+				D137703B18AC3E8C009B835B /* DATBlurView.m in Sources */,
 				D137700818AC30D6009B835B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +472,7 @@
 				D137702C18AC30D7009B835B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D137702D18AC30D7009B835B /* Build configuration list for PBXNativeTarget "DATBlurSegueTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +481,7 @@
 				D137702F18AC30D7009B835B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
