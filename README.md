@@ -1,4 +1,4 @@
 DATBlurSegue
 ============
 
-Present a modal controller with presenting controller blurred underneath
+Present a modal controller using a segue with presenting controller blurred underneath
