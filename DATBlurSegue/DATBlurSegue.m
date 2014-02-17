@@ -16,6 +16,10 @@
     UIViewController* sourceViewController = self.sourceViewController;
     UIViewController* destinationViewController = self.destinationViewController;
     
+    while (sourceViewController.parentViewController) {
+        sourceViewController = sourceViewController.parentViewController;
+    }
+    
     sourceViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
     
     DATBlurView* blur = [[DATBlurView alloc] initWithFrame:destinationViewController.view.bounds];

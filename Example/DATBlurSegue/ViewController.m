@@ -17,10 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.navigationController.navigationBarHidden = YES;
+}
+- (IBAction)closePressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)unwindToThisViewController:(UIStoryboardSegue *)unwindSegue
 {
+    //This does not work if the presenting controlle is contained in a navigation controller
 }
 @end
