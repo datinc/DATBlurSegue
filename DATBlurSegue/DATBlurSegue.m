@@ -33,8 +33,12 @@
     
     [sourceViewController presentViewController:destinationViewController animated:NO completion:nil];
     
+    [self animateView:destinationViewController.view];
+}
+
+- (void)animateView:(UIView *)view {
     // We need to do a custom animation because presentViewController does not support UIModalPresentationCurrentContext
-    CGRect endRect = destinationViewController.view.frame;
+    CGRect endRect = view.frame;
     CGRect startRect = endRect;
     
     switch ([[UIApplication sharedApplication] statusBarOrientation]) {
@@ -54,10 +58,10 @@
             break;
     }
     
-    destinationViewController.view.frame = startRect;
+    view.frame = startRect;
     
     [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-        destinationViewController.view.frame = endRect;
+        view.frame = endRect;
     } completion:nil];
 }
 
